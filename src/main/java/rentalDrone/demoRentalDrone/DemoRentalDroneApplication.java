@@ -8,6 +8,7 @@ public class DemoRentalDroneApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoRentalDroneApplication.class, args);
+
 	}
 
 }
