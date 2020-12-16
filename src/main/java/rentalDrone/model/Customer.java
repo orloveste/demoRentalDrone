@@ -8,11 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Data
 @Entity(name = "costumers")
-public class Costumer {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long costumerId;
-    private String costumerName;
+    private long customerId;
+    private String customerName;
 
-    public Costumer() {}
+    public Customer() {}
 }
