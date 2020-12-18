@@ -14,5 +14,4 @@ public class Customer {
     private long customerId;
     private String customerName;
 
-    public Customer() {}
 }

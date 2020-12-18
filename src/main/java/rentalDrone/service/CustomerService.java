@@ -26,14 +26,32 @@ public class CustomerService {
     }
 
     //update ToDo research first - how to do this?
-//    public Costumer updateCostumer(Long id) {
-//        getCostumerById(id);
-//        return costumerRepository.saveAndFlush(id)
-//    }
+
+    /*public Customer updateCostumerById(Long id) {
+        return customerRepository.findById(id).map(customer -> {
+           customer.setCustomerName(;
+           customer.
+        });
+    }*/ //v2
+    /*public Customer updateCostumerById(Long id) {
+        Customer updateCustomer = customerRepository.getOne(id).hashCode()
+
+        return customerRepository.saveAndFlush(id);
+    }*/ //v1
+//      .map(employee -> {
+//        employee.setName(newEmployee.getName());
+//        employee.setRole(newEmployee.getRole());
+//        return repository.save(employee);
+//      })
+//      .orElseGet(() -> {
+//        newEmployee.setId(id);
+//        return repository.save(newEmployee);
+//      });
 
     //delete
     public void deleteCustomerById(Long id) {
         customerRepository.deleteById(id);
     }
+
 
 }

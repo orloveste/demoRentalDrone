@@ -2,10 +2,7 @@ package rentalDrone.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity(name = "drones")
@@ -15,6 +12,4 @@ public class Drone {
     private long droneId;
     private long droneIdentificationSeries;
     private String droneModel;
-
-    public Drone() {}
 }
