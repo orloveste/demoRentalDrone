@@ -27,7 +27,7 @@ public class UserController {
     }
     //get endpoint
 
-    @RequestMapping(value = "/id", method = RequestMethod.GET)
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
     public User findUserById(@PathVariable Long id) {
         return userService.getUserById(id);
     }
@@ -35,7 +35,7 @@ public class UserController {
 
     //delete
     @DeleteMapping
-    @RequestMapping(value = "/id", method = RequestMethod.DELETE)
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     public void deleteUser(Long id) {
         userService.deleteUserById(id);
     }

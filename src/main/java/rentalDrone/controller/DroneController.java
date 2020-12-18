@@ -24,7 +24,7 @@ public class DroneController {
         return droneService.getAllDrones();
     }
     //get endpoint
-    @RequestMapping(value = "/id", method = RequestMethod.GET)
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
     public Drone findDroneById(@PathVariable("id") Long id) {
         return droneService.getDroneById(id);
     }
@@ -32,7 +32,7 @@ public class DroneController {
 
     //delete
     @DeleteMapping
-    @RequestMapping(value = "/id", method = RequestMethod.DELETE)
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     public void deleteDrone(Long id) {
         droneService.deleteDroneById(id);
     }

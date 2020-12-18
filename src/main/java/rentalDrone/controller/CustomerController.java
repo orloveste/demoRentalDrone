@@ -25,7 +25,7 @@ public class CustomerController {
     }
 
     //get endpoint
-    @RequestMapping(value = "/id", method = RequestMethod.GET)
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
     public Customer findCustomerById(@PathVariable Long id) {
         return customerService.getCustomerById(id);
     }
