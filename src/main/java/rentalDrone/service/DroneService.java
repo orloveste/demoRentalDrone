@@ -22,7 +22,7 @@ public class DroneService {
     }
     //find by id ak read
     public Drone getDroneById(Long id) {
-        return droneRepository.getOne(id);
+        return droneRepository.findById(id).get();
     }
 
     //update ToDo research first - how to do this?

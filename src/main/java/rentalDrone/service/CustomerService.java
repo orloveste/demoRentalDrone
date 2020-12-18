@@ -22,7 +22,7 @@ public class CustomerService {
     }
     //find by id ak read
     public Customer getCustomerById(Long id) {
-        return customerRepository.getOne(id);
+        return customerRepository.findById(id).get();
     }
 
     //update ToDo research first - how to do this?
